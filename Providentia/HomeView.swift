@@ -62,9 +62,8 @@ struct HomeView: View {
                 Text("Olá, \(userName)!")
                     .font(.title2.bold())
                 Text(month.formatted(.dateTime.month(.wide).year()))
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .textCase(.capitalized)
+    .font(.subheadline)
+    .foregroundStyle(.secondary)
             }
         }
     }
@@ -101,8 +100,8 @@ struct HomeView: View {
                 Image(systemName: "chevron.left")
             }
             Spacer()
-            Text(month.formatted(.dateTime.month(.wide).year()))
-                .font(.headline).textCase(.capitalized)
+           Text(month.formatted(.dateTime.month(.wide).year()))
+    .font(.headline)
             Spacer()
             Button { month = Calendar.current.date(byAdding: .month, value: 1, to: month)! } label: {
                 Image(systemName: "chevron.right")
