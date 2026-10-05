@@ -33,26 +33,30 @@ struct SettingsView: View {
                 .pickerStyle(.segmented)
             }
 
-            Section("Backup") {
-                Button {
-                    backupDocument = BackupDocument(data: store.backupData() ?? Data())
-                    exporting = true
-                } label: {
-                    Label("Exportar backup", systemImage: "square.and.arrow.up")
-                }
+            Section {
+    Button {
+        backupDocument = BackupDocument(data: store.backupData() ?? Data())
+        exporting = true
+    } label: {
+        Label("Exportar backup", systemImage: "square.and.arrow.up")
+    }
 
-                Button {
-                    importing = true
-                } label: {
-                    Label("Restaurar backup", systemImage: "square.and.arrow.down")
-                }
+    Button {
+        importing = true
+    } label: {
+        Label("Restaurar backup", systemImage: "square.and.arrow.down")
+    }
 
-                if !message.isEmpty {
-                    Text(message).font(.caption).foregroundStyle(.secondary)
-                }
-            } footer: {
-                Text("Guarde o arquivo de backup no app Arquivos ou em outro local seguro.")
-            }
+    if !message.isEmpty {
+        Text(message)
+            .font(.caption)
+            .foregroundStyle(.secondary)
+    }
+} header: {
+    Text("Backup")
+} footer: {
+    Text("Guarde o arquivo de backup no app Arquivos ou em outro local seguro.")
+}
 
             Section("Providentia") {
                 LabeledContent("Versão", value: "1.0")
