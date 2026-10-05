@@ -1,0 +1,126 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+
+/* Begin PBXBuildFile section */
+ A001 /* ProvidentiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F001; };
+ A002 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002; };
+ A003 /* ExpenseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003; };
+ A004 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004; };
+ A005 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005; };
+ A006 /* ExpenseEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F006; };
+ A007 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007; };
+ A008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F008; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+ F001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidentiaApp.swift; sourceTree = "<group>"; };
+ F002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+ F003 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseStore.swift; sourceTree = "<group>"; };
+ F004 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+ F005 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+ F006 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEditor.swift; sourceTree = "<group>"; };
+ F007 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+ F008 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+ F009 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+ F010 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Providentia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+ B003 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+ G001 = {isa = PBXGroup; children = (G002, G003); sourceTree = "<group>"; };
+ G002 = {isa = PBXGroup; path = Providentia; sourceTree = "<group>"; children = (F001,F002,F003,F004,F005,F006,F007,F008,F009); };
+ G003 = {isa = PBXGroup; name = Products; sourceTree = "<group>"; children = (F010); };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+ T001 = {
+   isa = PBXNativeTarget;
+   buildConfigurationList = C002;
+   buildPhases = (B001,B002,B003);
+   buildRules = ();
+   dependencies = ();
+   name = Providentia;
+   productName = Providentia;
+   productReference = F010;
+   productType = "com.apple.product-type.application";
+ };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+ P001 = {
+   isa = PBXProject;
+   attributes = { BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = { T001 = { CreatedOnToolsVersion = 16.0; }; }; };
+   buildConfigurationList = C001;
+   compatibilityVersion = "Xcode 14.0";
+   developmentRegion = en;
+   hasScannedForEncodings = 0;
+   knownRegions = (en, Base);
+   mainGroup = G001;
+   productRefGroup = G003;
+   projectDirPath = "";
+   projectRoot = "";
+   targets = (T001);
+ };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+ B002 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A008); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+ B001 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A001,A002,A003,A004,A005,A006,A007); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+ D001 = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Debug; };
+ D002 = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Release; };
+ D003 = {isa = XCBuildConfiguration; buildSettings = {
+   ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+   ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+   CODE_SIGN_STYLE = Automatic;
+   CURRENT_PROJECT_VERSION = 1;
+   GENERATE_INFOPLIST_FILE = NO;
+   INFOPLIST_FILE = Providentia/Info.plist;
+   IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+   MARKETING_VERSION = 1.0;
+   PRODUCT_BUNDLE_IDENTIFIER = com.lmachadoedu.providentia;
+   PRODUCT_NAME = "$(TARGET_NAME)";
+   SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+   SUPPORTS_MACCATALYST = NO;
+   SWIFT_EMIT_LOC_STRINGS = YES;
+   SWIFT_VERSION = 5.0;
+   TARGETED_DEVICE_FAMILY = 1;
+ }; name = Debug; };
+ D004 = {isa = XCBuildConfiguration; buildSettings = {
+   ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+   ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+   CODE_SIGN_STYLE = Automatic;
+   CURRENT_PROJECT_VERSION = 1;
+   GENERATE_INFOPLIST_FILE = NO;
+   INFOPLIST_FILE = Providentia/Info.plist;
+   IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+   MARKETING_VERSION = 1.0;
+   PRODUCT_BUNDLE_IDENTIFIER = com.lmachadoedu.providentia;
+   PRODUCT_NAME = "$(TARGET_NAME)";
+   SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+   SUPPORTS_MACCATALYST = NO;
+   SWIFT_EMIT_LOC_STRINGS = YES;
+   SWIFT_VERSION = 5.0;
+   TARGETED_DEVICE_FAMILY = 1;
+ }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+ C001 = {isa = XCConfigurationList; buildConfigurations = (D001,D002); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+ C002 = {isa = XCConfigurationList; buildConfigurations = (D003,D004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+ };
+ rootObject = P001;
+}
